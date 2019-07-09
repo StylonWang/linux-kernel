@@ -1,5 +1,5 @@
 KERNEL_VER=`uname -r`
-KERNEL_DIR=/usr/src/linux-headers-$(KERNEL_VER)
+KERNEL_DIR=/lib/modules/$(KERNEL_VER)/build
 PWD=`pwd`
 
 obj-m := kthread.o

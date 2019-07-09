@@ -39,6 +39,7 @@ static void mexit(void)
 {
   printk("kthread test exit\n");
   kthread_flush_worker(worker);
+  kthread_destroy_worker(worker);
 }
 
 module_init(minit);
